@@ -20,7 +20,6 @@ app.configure(function () {
 	app.use(express.logger('dev'));
 	app.use(express.bodyParser());
 	app.use(express.methodOverride());
-	app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 	app.use(app.router);
 	app.use(
         "/", //the URL throught which you want to access to you static content
@@ -34,7 +33,7 @@ app.get('/', function(req, res){
 
 // development only
 if (app.get('env') === 'development') {
-  app.use(express.errorHandler());
+  app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 }
 
 // production only

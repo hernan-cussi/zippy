@@ -1,0 +1,23 @@
+{
+  "name": "zippy",
+  "description": "Simple AngularJS application",
+  "version": "0.0.1",
+  "author": {
+    "name": "Hernán Cussi",
+    "email": "hernan.cussi@globallogic.com"
+  },
+  "private": true,
+  "dependencies": {
+    "express": "~3.2.6"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "keywords": [
+    "zippy"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hcussi/zippy"
+  },
+}
